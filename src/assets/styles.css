@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(61, 55, 55);
+    color: white;
+    margin-right: 2px;
+    
+    
+}
+
+.form-group{
+    padding: 2px;
+    margin: 5px;  
+}
+.form-label{
+    padding:5px;
+}
+
+.form{
+    display: block;
+    /* justify-content: center; */
+
+}
+
+h1{
+    text-align: center;
+}
+
+
+
+#formLogin{
+    display: flex;
+    justify-content: center;
+}
+
+#divBotao{
+    display: flex;
+    justify-content: center;
+}
