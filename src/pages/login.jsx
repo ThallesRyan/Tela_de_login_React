@@ -23,9 +23,7 @@ const Login = () => {
                         name="senha"
                         placeholder="Sua senha"
                     />
-
-                   
-                   <Botao>Acessar</Botao>
+                   <Botao >Acessar</Botao>
                    
                 </div>
             </div>
