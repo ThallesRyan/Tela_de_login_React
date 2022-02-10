@@ -9,9 +9,15 @@ import {useState} from "react"
     Param 2 Função*/
 
 const Login = () => {
-    const [valores, setValores] = useState()
-    console.log("Valores:", valores)
-  
+    const [valores, setValores] = useState({
+        email: "bananaFrita@gmail.com",
+        senha:'bananaFrita123' 
+    })
+    // console.log("Valores:", valores)
+
+const handleSave = _ =>{
+    console.log("clicou kk", valores)
+}    
 
     return (
         <div className="container">
@@ -19,7 +25,8 @@ const Login = () => {
             <div id="formLogin">
                 <div className="form">
                     <Input
-                        setValue ={setValores}
+                        setValue = {setValores}
+                        value ={valores.email}
                         label="Email"
                         title="E-mail"
                         type="text"
@@ -29,6 +36,7 @@ const Login = () => {
                     />
                     <Input
                         setValue = {setValores}
+                        value ={valores.password}
                         label="Senha"
                         title="password"
                         type="password"
@@ -36,7 +44,7 @@ const Login = () => {
                         name="senha"
                         placeholder="Sua senha"
                     />
-                    <Botao >Acessar</Botao>
+                    <Botao handleClick={handleSave} >Acessar</Botao>
 
                 </div>
             </div>
