@@ -2,20 +2,16 @@ import { Input } from "../components/layout/input"
 import { Botao } from "../components/layout/Botao"
 import {useState} from "react"
 
-const Login = () => {
-    let variavel = 'Meu nome é Thalles'
-
-    
-    // const [param1, param2] = useState('Valor Incial')
+// const [param1, param2] = useState('Valor Incial')
     /*
     UseState retorna
     Param 1 Valor da minha variável
     Param 2 Função*/
-    const [email, setEmail] = useState()
-    console.log("Email: "+ email)
 
-    const [password, setPassword] = useState()
-    console.log("Senha: "+ password)
+const Login = () => {
+    const [valores, setValores] = useState()
+    console.log("Valores:", valores)
+  
 
     return (
         <div className="container">
@@ -23,7 +19,7 @@ const Login = () => {
             <div id="formLogin">
                 <div className="form">
                     <Input
-                        setValue ={setEmail}
+                        setValue ={setValores}
                         label="Email"
                         title="E-mail"
                         type="text"
@@ -32,7 +28,7 @@ const Login = () => {
                         placeholder="Seu email"
                     />
                     <Input
-                        setValue = {setPassword}
+                        setValue = {setValores}
                         label="Senha"
                         title="password"
                         type="password"

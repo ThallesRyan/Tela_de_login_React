@@ -3,10 +3,12 @@ export const Input = (props) => {
 
     const handleChange = event =>{
         // const {value} = event.target
-        const valor = event.target.value
-        console.log("Mudou ", valor)
 
-        props.setValue(valor)
+        const valor = event.target.value
+        
+        props.setValue((valores_ateriores)
+            
+        console.log("Mudou ", valor)
     }
     return (
         <div className="form-group">
