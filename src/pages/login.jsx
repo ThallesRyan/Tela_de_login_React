@@ -20,10 +20,10 @@ const handleSave = _ =>{
 }    
 
     return (
-        <div className="container">
+        <div className="login">
             <h1>Login</h1>
-            <div id="formLogin">
-                <div className="form">
+            <div id="divFormulario">
+                <div className="caixaForm">
                     <Input
                         setValue = {setValores}
                         value ={valores.email}
