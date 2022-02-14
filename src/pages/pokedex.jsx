@@ -1,3 +1,4 @@
+import Card from '../components/layout/Card'
 export default function Pokedex(){
     const pokemon = {
         name: 'Ditto',
@@ -10,13 +11,25 @@ export default function Pokedex(){
     <div className="container">
       <h1>POKEMONS</h1>
 
-      <div className="row">
-        <div className="col-12 col-sm-6 col-md-4">
-          <div className="card">
-                <img src={pokemon.image} alt={pokemon.name} title={pokemon.name}/>
-                <h2>Nome do Pokemon</h2>
+      <div>
+        <div className="cards">
+            <Card nome={pokemon.name} imagem={pokemon.image}>
+            
+            </Card>
+
+            <Card></Card>    
+            <Card></Card>    
+            <Card></Card>    
+            <Card></Card>    
+            <Card></Card>    
+            <Card></Card>    
+            <Card></Card>    
+            <Card></Card>    
+            <Card></Card>    
+            <Card></Card>    
+            <Card></Card>    
                 
-          </div>
+          
         </div>
       </div>
     </div>
