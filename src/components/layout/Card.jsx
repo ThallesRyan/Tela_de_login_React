@@ -3,7 +3,7 @@ import "./Card.css"
 export default (props) => {
     return (
         <div>
-            
+
             {/* <div className="Card">
             <div className="nome">{props.nome}</div>
             <div className="imagem"><img src={props.imagem}></img></div>    
