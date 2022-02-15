@@ -3,6 +3,7 @@ import "./Card.css"
 export default (props) => {
     return (
         <div>
+            
             {/* <div className="Card">
             <div className="nome">{props.nome}</div>
             <div className="imagem"><img src={props.imagem}></img></div>    
@@ -15,9 +16,7 @@ export default (props) => {
                         <img className="imagem" src={props.imagem}></img>
                     </div>
                     <div className="flip-card-back">
-                        <div>
-                            
-                        </div>
+                        <div className="habilidades"><span>Habilidades</span> {props.habilidades}</div>
                     </div>
                 </div>
             </div>

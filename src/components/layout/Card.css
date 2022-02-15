@@ -11,7 +11,9 @@
     width: 300px;
     height: 300px;
     perspective: 1000px;
-    margin: 10px;
+    margin: 18px;
+    
+    
     /* border: solid 5px rgb(0, 0, 0); */
   }
   
@@ -36,14 +38,18 @@
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    border: solid 10px white;
+    border-radius: 15px;
+    box-shadow: 4px 3px 2px 1px white;
   }
   
   .flip-card-front {
-    background: linear-gradient(to bottom, rgb(219, 216, 216) , rgb(0, 0, 0));
+    background: linear-gradient(to bottom, rgb(99, 99, 197) , rgb(138, 138, 228));
     color: black;
 
     display: flex;
     flex-direction: column;
+    box-shadow: 4px 3px 2px 1px white;
     
     
   }
@@ -52,9 +58,12 @@
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     transform: rotateY(180deg);
+    background: rgb(99, 99, 197);
+    box-shadow: 1px 2px 3px 4px white;
   }
 
 
+  /**/
   .flip-card-front .imagem {
     width: 80%;
     display: flex;
@@ -64,7 +73,20 @@
   .flip-card-front .nome {
     font-size: 30px;
     font-family:Oswald;
-    background-color: rgb(49, 45, 45);
-    color: white;
+  
+    background-color: white;
+    color: black;
   }
 
+  .flip-card-back .habilidades{
+    color: white;
+    font-size: 1.5em;
+  }
+
+  .flip-card-back .habilidades span{
+    font-family: Oswald;
+    font-size: 40px;
+    color:rgb(245, 241, 45) ;
+    display: block;
+    margin-top:20px;
+  }
