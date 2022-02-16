@@ -11,8 +11,8 @@
 
 .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     perspective: 1000px;
     margin: 18px;
     padding: 12px;
@@ -52,9 +52,7 @@
 
     display: flex;
     flex-direction: column;
-    box-shadow: 4px 3px 2px 1px white;
-    
-    
+    box-shadow: 4px 3px 2px 1px white;    
   }
   
   .flip-card-back {
@@ -68,10 +66,10 @@
 
   /**/
   .flip-card-front .imagem {
-    position: relative;
-    width: 80%;
+    
+    width: 100%;
     display: flex;
-    align-self: center;
+    
    
   }
 
@@ -94,4 +92,19 @@
     color:rgb(245, 241, 45) ;
     display: block;
     margin-top:20px;
+  }
+
+  .divImagem{
+    display: flex;
+    flex-direction: row;
+    width: 10%;
+    align-self: center;
+    align-items: center;
+    
+  }
+
+  .flip-card-front :nth-child(2){
+    flex-grow: 1 ;
+    width: 50%;
+    
   }

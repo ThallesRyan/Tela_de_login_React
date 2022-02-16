@@ -2,6 +2,7 @@ import Card from '../components/layout/Card'
 import react, { useEffect } from "react"
 import reactUseState, { useState } from 'react'
 import {getImagem} from  '../utils/helpers' 
+import {Botao} from "../components/layout/Botao"
 export default function Pokedex() {
 
   const [pokemons, setPokemons] = useState([])//Array de pokemons
@@ -44,9 +45,11 @@ export default function Pokedex() {
               <Card nome={pokemon.name} imagem={getImagem(pokemon.url)} url={pokemon.url} key={index} />
             ))
           }
-  
-  
         </div>
+      </div>
+      <div className='divBotao'>
+          <Botao noGroup className="botaoVoltar">Voltar</Botao>
+          <Botao noGroup={true}>Avançar</Botao>
       </div>
     </div>
   )
