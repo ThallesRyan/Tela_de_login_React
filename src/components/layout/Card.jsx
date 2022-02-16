@@ -16,7 +16,7 @@ export default (props) => {
                         <div className="nome">{props.nome}</div>
                         <div className="divImagem"><img className="imagem" src={props.imagem}></img></div>
                     </div>
-                    <div className="flip-card-back">
+                    <div className="flip-card-back" style={coresCard(props)}>
                         <div className="habilidades"><span>Habilidades</span> {props.habilidades}</div>
                     </div>
                 </div>

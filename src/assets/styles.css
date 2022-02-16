@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(61, 55, 55);
+    background: linear-gradient(to right, rgb(233, 230, 230), rgb(56, 55, 55), rgb(255, 255, 255));
     color: white;
     margin-right: 2px;
 }

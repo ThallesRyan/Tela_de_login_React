@@ -59,7 +59,7 @@
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     transform: rotateY(180deg);
-    background: rgb(99, 99, 197);
+    
     box-shadow: 1px 2px 3px 4px white;
   }
 
@@ -89,7 +89,7 @@
   .flip-card-back .habilidades span{
     font-family: Oswald;
     font-size: 40px;
-    color:rgb(245, 241, 45) ;
+    color:white ;
     display: block;
     margin-top:20px;
   }
@@ -105,6 +105,6 @@
 
   .flip-card-front :nth-child(2){
     flex-grow: 1 ;
-    width: 50%;
+    width: 60%;
     
   }

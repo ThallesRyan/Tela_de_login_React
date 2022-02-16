@@ -32,6 +32,9 @@ export default function Pokedex() {
   //   return imagem
   // }
 
+  
+   
+
   return (
     <div className="container">
       <h1>POKEMONS</h1>
