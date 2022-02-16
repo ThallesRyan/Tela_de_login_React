@@ -1,5 +1,6 @@
 import React from "react";
 import "./Card.css"
+import {coresCard} from "../../utils/coresCard"
 export default (props) => {
     return (
         <div>
@@ -11,7 +12,7 @@ export default (props) => {
 
             <div className="flip-card">
                 <div className="flip-card-inner">
-                    <div className="flip-card-front">
+                    <div className="flip-card-front" style={coresCard(props)}>
                         <div className="nome">{props.nome}</div>
                         <img className="imagem" src={props.imagem}></img>
                     </div>

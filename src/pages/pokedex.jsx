@@ -13,8 +13,6 @@ export default function Pokedex() {
         const promise = await fetch("https://pokeapi.co/api/v2/pokemon?limit=100&offset=0")
         const resultado = await promise.json()
 
-        
-      
         setPokemons(resultado.results)
         console.log(resultado.results)
       } catch(error){
@@ -43,7 +41,7 @@ export default function Pokedex() {
   
           {
             pokemons.map((pokemon , index) =>(
-              <Card nome={pokemon.name} imagem={getImagem(pokemon.url)} key={index} />
+              <Card nome={pokemon.name} imagem={getImagem(pokemon.url)} url={pokemon.url} key={index} />
             ))
           }
   

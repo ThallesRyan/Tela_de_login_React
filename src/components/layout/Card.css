@@ -47,7 +47,7 @@
   }
   
   .flip-card-front {
-    background: linear-gradient(to bottom, rgb(99, 99, 197) , rgb(138, 138, 228));
+    /* background: linear-gradient(to bottom, rgb(99, 99, 197) , rgb(138, 138, 228)); */
     color: black;
 
     display: flex;
