@@ -1,8 +1,8 @@
 const axios = require('axios')
 
-export  function coresCard(props) {
+export function coresCard(props) {
     const base_url = 'https://pokeapi.co/api/v2/'
-   let cores
+    let cores
     // console.log(props)
     let corte = props.url.split('/')
     let id = corte[6]
